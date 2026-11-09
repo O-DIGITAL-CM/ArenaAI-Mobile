@@ -1,0 +1,9 @@
+const webpack = require('@nativescript/webpack');
+
+module.exports = (env) => {
+  webpack.init(env);
+
+  // Learn how to customize the webpack config:
+  // https://docs.nativescript.org/webpack
+  return webpack.resolveConfig();
+};

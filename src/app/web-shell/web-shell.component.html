@@ -1,0 +1,34 @@
+<GridLayout class="{{ shellClass }}">
+
+    <!-- The wrapped website. Full-bleed on both platforms: `iosOverflowSafeArea`
+         lets WKWebView paint under the notch, and the page itself owns the
+         viewport so the site can use its own safe-area CSS. -->
+    <WebView #browser
+             [src]="src"
+             (loaded)="onWebViewLoaded($event)"
+             (loadStarted)="onLoadStarted($event)"
+             (loadFinished)="onLoadFinished($event)"
+             iosOverflowSafeArea="true"
+             class="web-view">
+    </WebView>
+
+    <!-- First-paint indicator. Kept as an overlay so the WebView keeps its
+         native size and never re-lays out when it disappears. -->
+    <GridLayout *ngIf="loading && !failed" class="overlay">
+        <StackLayout class="loading-pill" verticalAlignment="center" horizontalAlignment="center">
+            <ActivityIndicator busy="true" width="28" height="28" class="spinner"></ActivityIndicator>
+        </StackLayout>
+    </GridLayout>
+
+    <!-- Shown only when the site cannot be reached at all. -->
+    <GridLayout *ngIf="failed" class="overlay overlay-solid">
+        <StackLayout class="card" verticalAlignment="center" horizontalAlignment="center">
+            <Image src="~/assets/logo-mark.png" width="56" height="56" class="card-logo"></Image>
+            <Label text="Can’t reach Arena" class="card-title"></Label>
+            <Label [text]="failureDetail" textWrap="true" class="card-body"></Label>
+            <Button text="Try again" (tap)="retry()" class="btn btn-primary"></Button>
+            <Button text="Open in browser" (tap)="openInBrowser()" class="btn btn-secondary"></Button>
+        </StackLayout>
+    </GridLayout>
+
+</GridLayout>

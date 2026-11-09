@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      The NativeScript CLI rewrites __NAME__ / __TITLE_ACTIVITY__ from
+      nativescript.config.ts. Both are spelled out here instead so a plain
+      `ns build` produces the right labels even when the placeholders are gone.
+    -->
+    <string name="app_name">Arena</string>
+    <string name="title_activity_kimera">Arena</string>
+</resources>

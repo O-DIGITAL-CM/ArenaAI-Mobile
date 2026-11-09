@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Shell styling.
+ *
+ * Deliberately tiny: the UI lives inside the wrapped website, so the native
+ * layer only owns the background, the first-paint spinner and the offline card.
+ * NativeScript supports a subset of CSS (no flexbox shorthand, no box-shadow),
+ * which is why this file uses plain properties instead of Tailwind utilities.
+ */
+
+.shell {
+  background-color: #ffffff;
+}
+
+.shell-dark {
+  background-color: #0b0b0f;
+}
+
+.web-view {
+  background-color: transparent;
+}
+
+.overlay {
+  background-color: transparent;
+}
+
+.overlay-solid {
+  background-color: #ffffff;
+}
+
+.shell-dark .overlay-solid {
+  background-color: #0b0b0f;
+}
+
+/* ---------------------------------------------------------- loading spinner */
+
+.loading-pill {
+  width: 64;
+  height: 64;
+  border-radius: 32;
+  background-color: rgba(11, 11, 15, 0.06);
+  horizontal-align: center;
+  vertical-align: center;
+}
+
+.shell-dark .loading-pill {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.spinner {
+  color: #0b0b0f;
+  width: 26;
+  height: 26;
+  horizontal-align: center;
+  vertical-align: center;
+}
+
+.shell-dark .spinner {
+  color: #ffffff;
+}
+
+/* ------------------------------------------------------------ offline card */
+
+.card {
+  width: 84%;
+  padding: 28 24 20 24;
+  border-radius: 20;
+  background-color: #f6f6f8;
+  horizontal-align: center;
+  vertical-align: center;
+}
+
+.shell-dark .card {
+  background-color: #16161c;
+}
+
+.card-logo {
+  horizontal-align: center;
+  margin-bottom: 18;
+}
+
+.card-title {
+  font-size: 20;
+  font-weight: 600;
+  color: #0b0b0f;
+  text-align: center;
+  margin-bottom: 8;
+}
+
+.shell-dark .card-title {
+  color: #ffffff;
+}
+
+.card-body {
+  font-size: 14;
+  line-height: 20;
+  color: #5c5c66;
+  text-align: center;
+  margin-bottom: 22;
+}
+
+.shell-dark .card-body {
+  color: #a5a5b0;
+}
+
+/* ----------------------------------------------------------------- buttons */
+
+.btn {
+  font-size: 16;
+  font-weight: 600;
+  border-radius: 14;
+  height: 48;
+  margin-top: 10;
+}
+
+.btn-primary {
+  background-color: #0b0b0f;
+  color: #ffffff;
+}
+
+.shell-dark .btn-primary {
+  background-color: #ffffff;
+  color: #0b0b0f;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #5c5c66;
+}
+
+.shell-dark .btn-secondary {
+  color: #a5a5b0;
+}

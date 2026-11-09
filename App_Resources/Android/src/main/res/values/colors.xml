@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <!-- App chrome. Kept in sync with src/app.css (`shell` / `shell-dark`). -->
+    <color name="ns_primary">#FFFFFF</color>
+    <color name="ns_primaryDark">#0B0B0F</color>
+    <color name="ns_accent">#0B0B0F</color>
+
+    <!-- Splash screen surface, matching the WebView's pre-paint background. -->
+    <color name="splash_background">#0B0B0F</color>
+
+    <!-- System bars: opaque surfaces, no translucency. -->
+    <color name="status_bar">#FFFFFF</color>
+</resources>

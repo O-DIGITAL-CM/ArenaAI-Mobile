@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Adaptive icon foreground: the Arena "A" mark, drawn as a vector so it stays
+     crisp at every density. The safe zone is the middle 66dp of the 108dp
+     canvas, which is where the glyph is placed. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:pathData="M48.2,32.5 L38.4,59.2 L44.6,59.2 L46.9,52.6 L55.6,52.6 L57.9,59.2 L64.1,59.2 L54.3,32.5 Z M48.6,47.9 L51.3,40.4 L53.9,47.9 Z"
+        android:fillColor="#FFFFFF"
+        android:fillType="evenOdd" />
+</vector>

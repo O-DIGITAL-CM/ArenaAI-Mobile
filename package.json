@@ -1,0 +1,43 @@
+{
+  "name": "arenaai-mobile",
+  "version": "1.0.0",
+  "description": "ArenaAI mobile app - NativeScript + Angular shell hosting the arena.ai website.",
+  "main": "src/main.ts",
+  "private": true,
+  "author": "O-DIGITAL-CM",
+  "license": "UNLICENSED",
+  "scripts": {
+    "android": "ns run android",
+    "ios": "ns run ios",
+    "clean": "ns clean",
+    "lint": "tsc --noEmit",
+    "build:android": "ns build android"
+  },
+  "dependencies": {
+    "@angular/animations": "~22.0.0",
+    "@angular/common": "~22.0.0",
+    "@angular/compiler": "~22.0.0",
+    "@angular/core": "~22.0.0",
+    "@angular/forms": "~22.0.0",
+    "@angular/platform-browser": "~22.0.0",
+    "@angular/platform-browser-dynamic": "~22.0.0",
+    "@angular/router": "~22.0.0",
+    "@nativescript/angular": "~22.0.0",
+    "@nativescript/core": "~9.1.0",
+    "rxjs": "~7.8.0",
+    "zone.js": "~0.16.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~22.0.0",
+    "@angular/compiler-cli": "~22.0.0",
+    "@nativescript/android": "~9.1.0",
+    "@nativescript/ios": "~9.1.0",
+    "@nativescript/tailwind": "~2.1.0",
+    "@nativescript/types": "~9.1.0",
+    "@nativescript/webpack": "~5.0.39",
+    "@ngtools/webpack": "~22.0.0",
+    "nativescript": "~9.1.0",
+    "tailwindcss": "~3.4.0",
+    "typescript": "~6.0.0"
+  }
+}
